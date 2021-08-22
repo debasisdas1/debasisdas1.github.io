@@ -277,7 +277,7 @@
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="kd">import</span> <span class="nc">Cocoa</span>
+<p><div class="highlight"><pre><span></span><code><span class="kd">import</span> <span class="nc">Cocoa</span>
 
 <span class="c1">//Here the stack is created as a wrapper around a swift array that allows push an object to the stack, </span>
 <span class="c1">//pop the last object and look at the top element of the stack</span>
@@ -304,6 +304,35 @@
         <span class="k">return</span> <span class="n">array</span><span class="p">.</span><span class="bp">last</span>
     <span class="p">}</span>
 <span class="p">}</span>
+</code></pre></div>
+<strong>Testing the stack implementation</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nv">stack</span> <span class="p">=</span> <span class="n">Stack</span><span class="p">&lt;</span><span class="nb">Int</span><span class="p">&gt;()</span>
+<span class="n">stack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="bp">print</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span> 
+<span class="c1">//Stack&lt;Int&gt;(array: [10])</span>
+
+<span class="n">stack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="bp">print</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span> 
+<span class="c1">//Stack&lt;Int&gt;(array: [10, 20])</span>
+
+<span class="n">stack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+<span class="bp">print</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span> <span class="c1">//Stack&lt;Int&gt;(array: [10, 20, 30])</span>
+<span class="k">if</span> <span class="kd">let</span> <span class="nv">val</span> <span class="p">=</span> <span class="n">stack</span><span class="p">.</span><span class="n">pop</span><span class="p">(){</span>
+    <span class="bp">print</span><span class="p">(</span><span class="s">&quot;The popped item = </span><span class="si">\(</span><span class="n">val</span><span class="si">)</span><span class="s">&quot;</span><span class="p">)</span> 
+    <span class="c1">//The popped item = 30</span>
+<span class="p">}</span>
+<span class="bp">print</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span> <span class="c1">//Stack&lt;Int&gt;(array: [10, 20])</span>
+
+<span class="k">if</span> <span class="kd">let</span> <span class="nv">topElement</span> <span class="p">=</span> <span class="n">stack</span><span class="p">.</span><span class="n">top</span><span class="p">{</span>
+    <span class="bp">print</span><span class="p">(</span><span class="s">&quot;The Top Element is = </span><span class="si">\(</span><span class="n">topElement</span><span class="si">)</span><span class="s">&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">//The Top Element is = 20</span>
+
+<span class="bp">print</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span> 
+<span class="c1">//Stack&lt;Int&gt;(array: [10, 20])</span>
+
+
+<span class="c1">//The pop removes the last element however the top only looks at the last element without removing it.</span>
 </code></pre></div>
                 
               
