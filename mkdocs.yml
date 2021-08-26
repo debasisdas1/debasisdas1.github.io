@@ -1,1 +1,44 @@
-site_name: My Docs
+site_name: Code Snippets - By Debasis Das
+nav:
+  - Home: 'index.md'
+  - Python: 
+    - Introduction: 'Python/Python.md'
+    
+  - Machine Learning: 
+    - Introduction: 'MachineLearning/Machinelearning.md'
+    - KMeans Clustering(SKLearn): 'MachineLearning/KMeans_Clustering/KMeans_Clustering.md'
+    - DBScan Clustering(SKLearn): 'MachineLearning/DBScan_Clustering/DBScan_Clustering.md'
+    
+  - Design Patterns: 
+    - Introduction: 'DesignPattern/Designpatterns.md'
+  - Data Structures: 
+    - Introduction: 'Datastructures/Datastructures.md'
+    - Stack: 'Datastructures/Stack.md'  
+    - Tree: 'Datastructures/Tree.md'
+  - Algorithms: 'Algorithms/Algorithms.md'
+  - Swift Language: 'Swift/Swift.md'
+  - Cocoa:
+    - Cocoa: 'Cocoa/Cocoa.md'
+    - NSTableView: 'Cocoa/NSTableView.md'
+    - NSTableView (Programatically): 'Cocoa/NSTableView_programatically.md'
+
+theme:
+    name: material
+    nav_style: dark
+    features:
+        - navigation.expand
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+#    palette:
+#        - media: "(prefers-color-scheme: light)"
+#          scheme: default
+#          toggle:
+#            icon: material/toggle-switch-off-outline
+#            name: Switch to dark mode
+#        - media: "(prefers-color-scheme: dark)"
+#          scheme: slate
+#          toggle:
+#            icon: material/toggle-switch
+#            name: Switch to light mode
