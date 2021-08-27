@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # KMeans Clustering using SKLearn
 
 

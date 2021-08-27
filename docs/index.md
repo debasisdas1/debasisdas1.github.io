@@ -1,4 +1,4 @@
-# Welcome to Code Snippets by Debasis Das
+# Welcome to Code Snippets (By Debasis Das)
 
 
 Here we will cover basic to advanced topics on the following
