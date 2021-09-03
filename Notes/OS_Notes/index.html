@@ -649,10 +649,25 @@
                 
                   <h1>Operating System</h1>
                 
-                <h2 id="introduction-to-operating-system">Introduction to Operating System</h2>
-<p><strong>Interrupt Steps</strong></p>
+                <p><em>Note: These notes are taken from CPE-MCS-BP1-103 Course provided by Dr Ayan Banerjee (Arizona State University) and for my personal reference only.</em></p>
+<p><a href="https://www.youtube.com/watch?v=7rh7VnUutHY">Reference - Comparison of Scheduling Algorithm</a></p>
+<h2 id="introduction-to-operating-system">Introduction to Operating System</h2>
+<p><strong>Interrupt</strong></p>
 <ul>
-<li>Interrupts helps in doing context switching by tracking time</li>
+<li>The CPU never sleeps, It is either executing our program or some background process or an assembly level instruction.</li>
+<li>To interact with the CPU we need events which internally rely on the interrupts.</li>
+</ul>
+<p><strong>When CPU takes an Interrupt</strong></p>
+<ul>
+<li>It pushes the PC to stack</li>
+<li>Loads the IV (Interrupt Vector) into the Program Counter</li>
+<li>Each Interrupt has a number , each number has an IV, Each item in the IV is associated with an address to the ISR(Interrupt Service Routine)</li>
+<li>
+<p><strong>Interrupt Steps</strong></p>
+</li>
+<li>
+<p>Interrupts helps in doing context switching by tracking time</p>
+</li>
 <li>Loading program counter and status register of interrupt vector </li>
 <li>Executing Interrupt Service Routines</li>
 <li>Pushing program counter and status register to stack </li>
@@ -788,6 +803,7 @@
 <ul>
 <li>Process contains a CPU and IO Bursts</li>
 <li>Process starts with a CPU Burst and should end with a CPU Burst</li>
+<li>If Sum of CPU Burst Time &gt; Sum of  IO Burst times -&gt; CPU Bound else IO Bound</li>
 </ul>
 <p><strong>Preemptive Scheduling</strong></p>
 <ul>
@@ -804,9 +820,24 @@
 <li>Save context of the current running process in its process control block (PCB) </li>
 <li>Load context of the next running process from its process control block (PCB)</li>
 </ul>
+<p><strong>CPU Scheduling Algorithm</strong></p>
+<ul>
+<li>FCFS (First come First Serve) or FIFO (first in first out)</li>
+<li>SJF (Shortest Job First)</li>
+</ul>
+<p>Decides which process to take from the ready queue and move to the run queue.</p>
 <p><strong>SJF scheduling</strong></p>
 <ul>
 <li>Process with shortest CPU burst time runs first</li>
+</ul>
+<p><strong>CPU Scheduling metrics</strong></p>
+<ul>
+<li><strong><em>CPU Utilization:</em></strong> The percentage of time that the CPU is busy – not idle.</li>
+<li><strong><em>Throughput:</em></strong> The number of processes that are completed per time unit.</li>
+<li><strong><em>Waiting time:</em></strong> The sum of the time spent in the ready queue during the life of the process. Time blocked, waiting for I/O, is not part of the waiting time.</li>
+<li><strong><em>service time:</em></strong>The amount of CPU time that a process will need before it either finishes or voluntarily exits the CPU, such as to wait for input / output.</li>
+<li><strong><em>Turnaround time for a process:</em></strong> The amount of time between the time a process arrives in the ready state to the time it exits the running state for the last time</li>
+<li><strong><em>response time:</em></strong> The time from first submission of the process until the first running.</li>
 </ul>
 <h2 id="concurrent-processes">Concurrent Processes</h2>
 <p><strong>Race Condition</strong></p>
