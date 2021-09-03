@@ -649,7 +649,8 @@
                 
                   <h1>Operating System</h1>
                 
-                <p><em>Note: These notes are taken from CPE-MCS-BP1-103 Course provided by Dr Ayan Banerjee (Arizona State University) and for my personal reference only.</em></p>
+                <p><em>Added by Debasis Das (3-Sep-2021)</em></p>
+<p><em>Note: These notes are taken from CPE-MCS-BP1-103 Course provided by Dr Ayan Banerjee (Arizona State University) and for my personal reference only.</em></p>
 <p><a href="https://www.youtube.com/watch?v=7rh7VnUutHY">Reference - Comparison of Scheduling Algorithm</a></p>
 <h2 id="introduction-to-operating-system">Introduction to Operating System</h2>
 <p><strong>Interrupt</strong></p>
@@ -662,12 +663,10 @@
 <li>It pushes the PC to stack</li>
 <li>Loads the IV (Interrupt Vector) into the Program Counter</li>
 <li>Each Interrupt has a number , each number has an IV, Each item in the IV is associated with an address to the ISR(Interrupt Service Routine)</li>
-<li>
+</ul>
 <p><strong>Interrupt Steps</strong></p>
-</li>
-<li>
-<p>Interrupts helps in doing context switching by tracking time</p>
-</li>
+<ul>
+<li>Interrupts helps in doing context switching by tracking time</li>
 <li>Loading program counter and status register of interrupt vector </li>
 <li>Executing Interrupt Service Routines</li>
 <li>Pushing program counter and status register to stack </li>
@@ -873,6 +872,16 @@
 <li>If readers are reading, no writer can write </li>
 </ul>
 <h2 id="memory-management">Memory Management</h2>
+<ul>
+<li>Process requires memory for code, data, stack and heap</li>
+<li>code and data needs a static amount of data.</li>
+<li>Stack and heap are dynamic which change based on the input it receives. The OS Allocates doesnt know exact amount of data to stack and heap and thus provides a default amount of data. To increase the stack and heap memory a system call to the OS is required.</li>
+<li>Unused stack and heap memory goes to waste (Called as Internal fragmentation)</li>
+</ul>
+<p><strong>Contiguous Memory</strong></p>
+<ul>
+<li>Continous block of memory that is assigned.</li>
+</ul>
 <p><strong>Internal Fragmentation</strong></p>
 <ul>
 <li>Unused memory in the stack and heap allocated space</li>
@@ -880,27 +889,61 @@
 <p><strong>External Fragmentation</strong></p>
 <ul>
 <li>Unused memory between process allocated space</li>
+<li>Memory is free but processes are waiting as they are expecting contigous memory allocation and not enough contigous memory is available.</li>
+</ul>
+<p><strong>Solutions to Fragmentation</strong></p>
+<ul>
+<li><strong><em>Compaction</em></strong>: Reclaim the holes and make it contigous. Move code in memory</li>
 </ul>
 <p><strong>Policies that can be used to improve efficiency of memory compaction</strong></p>
 <ul>
-<li>Memory Allocation Protocols </li>
-<li>Dynamic Linking and Loading </li>
-<li>Overlays </li>
-<li>Swapping</li>
+<li>Memory Allocation Protocols <ul>
+<li>first fit</li>
+<li>best fit</li>
+<li>worst fit (works best with large number of small processes)</li>
+</ul>
+</li>
+<li>Dynamic Linking and Loading <ul>
+<li>Library Functions and loaded and linked on demand</li>
+</ul>
+</li>
+<li>Overlays <ul>
+<li>dividing the programs into fragments, loading one fragment at a time, </li>
+<li>Fragment swapping is expensive</li>
+<li>overlay second fragment on first  </li>
+</ul>
+</li>
+<li>Swapping<ul>
+<li>Same as overlays but applies to programs</li>
+</ul>
+</li>
 </ul>
 <p><strong>advantage of contiguous allocation over paging?</strong></p>
 <ul>
 <li>For accessing lines of code, it requires less memory access</li>
+</ul>
+<p><strong>Pages</strong></p>
+<ul>
+<li>Log S for frame and (S- Log S) for line numbers</li>
+<li>No need for contigous allocation</li>
 </ul>
 <p><strong>page faults occur when</strong></p>
 <ul>
 <li>A program wants to start executing</li>
 <li>Accessing a page that was previously in memory, but has been replaced by another page</li>
 </ul>
+<p><strong>Hit Ratio</strong></p>
+<ul>
+<li>Hit Ratio = Total Number of Hits / Total Number of accesses</li>
+</ul>
 <p><strong>disadvantages of paging</strong></p>
 <ul>
 <li>Increased memory usage, due to saving page tables </li>
 <li>Slow creation, due to logical to physical address conversion</li>
+</ul>
+<p><strong>Page Fault</strong></p>
+<ul>
+<li>A page fault occurs when the MMU Doesnt find the Page table in the RAM</li>
 </ul>
 <p><strong>demand paging</strong></p>
 <ul>
