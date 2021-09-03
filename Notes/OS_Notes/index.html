@@ -652,6 +652,7 @@
                 <h2 id="introduction-to-operating-system">Introduction to Operating System</h2>
 <p><strong>Interrupt Steps</strong></p>
 <ul>
+<li>Interrupts helps in doing context switching by tracking time</li>
 <li>Loading program counter and status register of interrupt vector </li>
 <li>Executing Interrupt Service Routines</li>
 <li>Pushing program counter and status register to stack </li>
@@ -666,10 +667,6 @@
 <li>Buffering</li>
 <li>Spooling</li>
 <li>Caching</li>
-</ul>
-<p><strong>Program Counter</strong></p>
-<ul>
-<li>Stores the address of the next instruction to be executed</li>
 </ul>
 <p><strong>advantage of privilege mode over user mode?</strong></p>
 <ul>
@@ -735,15 +732,72 @@
 <li>uses a relocation tables</li>
 <li>Uses a combination of object files and relocation table to identify loc that needs modification. </li>
 <li>Converts to binary</li>
-<li>Linker uses memory addresses starting from 0 and incremented by 1</li>
+<li>Linker uses memory addresses starting from 0 and incremented by 1. This address is called relative addresses.</li>
+<li>Output of the linker is the .exe file</li>
+</ul>
+<p><strong>Loader</strong></p>
+<ul>
+<li>Symbol table contains relative addresses</li>
+<li>Loader loads the exe file, invokes the memory management unit, assigns physical memory addresses to the relative addresses</li>
+</ul>
+<p><strong>Process states</strong></p>
+<ul>
+<li>Initial</li>
+<li>READY- The process is waiting to be assigned to a processor.</li>
+<li>RUN- Instructions are being executed.</li>
+<li>WAIT- The process is waiting for some event to occur(such as an I/O completion or reception of a signal). Process from the wait state can only move to the ready state.</li>
+<li>EXIT - The process has finished execution. Free up the unused memory, Clean up the stack.</li>
+</ul>
+<p><strong>Process Memory State</strong></p>
+<ul>
+<li>Code</li>
+<li>Global Data </li>
+<li>Stack (function frames (Local variables, stack pointer, instruction pointer))</li>
+<li>Heap (used for dynamic memory allocation)</li>
+</ul>
+<p>Stack and Heap needs dynamic memory allocation.</p>
+<p>Stack pointer and heap pointer are used to demarcate the start of stack and heap in memory</p>
+<p><strong>Program Counter</strong></p>
+<ul>
+<li>Stores the address of the next instruction to be executed</li>
+<li>Program counter are stored in EIP (Instruction Pointer)</li>
+</ul>
+<p><strong>Status Register</strong></p>
+<ul>
+<li>used to change mode (user vs privilege)</li>
+</ul>
+<p><strong>MMU (Memory Management Unit)</strong></p>
+<ul>
+<li>Used to do memory protection by utilizing a base and bound</li>
+</ul>
+<p><strong>Process Control Block</strong></p>
+<ul>
+<li>Holds the memory state of a process</li>
+<li>One PCB per process</li>
+<li>Contains registers, Program Counters, Stack Pointer, Heap Pointer, Process attributes, base , bound etc</li>
+<li>PCB is stored in the Kernel Data Structure stored in Kernel Memory space.</li>
+<li>Process ID, process priority</li>
+<li>Helps for switching between 2 processes.</li>
+</ul>
+<p><strong>Scheduling Queues</strong></p>
+<ul>
+<li>There are queues for the process states (Initial, Ready, Run, Wait and Exit)</li>
+<li>Run Queue can only hold one process, every other queue can hold more than one process</li>
+</ul>
+<p><strong>Bursts</strong></p>
+<ul>
+<li>Process contains a CPU and IO Bursts</li>
+<li>Process starts with a CPU Burst and should end with a CPU Burst</li>
 </ul>
 <p><strong>Preemptive Scheduling</strong></p>
 <ul>
 <li>CPU scheduler can stop processes in middle of running </li>
+<li>Processes which gets pre-empted goes to the ready state</li>
 </ul>
 <p><strong>Non Premptive Scheduling</strong></p>
 <ul>
 <li>Is used in embedded systems</li>
+<li>Cannot stop a process</li>
 </ul>
 <p><strong>Context Switch</strong></p>
 <ul>
