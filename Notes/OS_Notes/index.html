@@ -14,7 +14,7 @@
     
     
       
-        <title>OS Notes - Code Snippets - By Debasis Das</title>
+        <title>Operating System - Code Snippets - By Debasis Das</title>
       
     
     
@@ -60,6 +60,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#introduction-to-operating-system" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -86,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              OS Notes
+              Operating System
             
           </span>
         </div>
@@ -471,26 +476,103 @@
   
 
           
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Cocoa/NSTableView.md" class="md-nav__link">
-        NSTableView
-      </a>
+        </ul>
+      </nav>
     </li>
   
 
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
+      
+      <label class="md-nav__link" for="__nav_9">
+        Notes
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Notes" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Cocoa/NSTableView_programatically.md" class="md-nav__link">
-        NSTableView (Programatically)
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Operating System
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Operating System
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-operating-system" class="md-nav__link">
+    Introduction to Operating System
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cpu-scheduling-concepts" class="md-nav__link">
+    CPU Scheduling Concepts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concurrent-processes" class="md-nav__link">
+    Concurrent Processes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memory-management" class="md-nav__link">
+    Memory Management
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -508,15 +590,245 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-operating-system" class="md-nav__link">
+    Introduction to Operating System
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cpu-scheduling-concepts" class="md-nav__link">
+    CPU Scheduling Concepts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concurrent-processes" class="md-nav__link">
+    Concurrent Processes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memory-management" class="md-nav__link">
+    Memory Management
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>OS Notes</h1>
+                  <h1>Operating System</h1>
                 
-                <p><img alt="png" src="../ProcessPrograms.png" /></p>
+                <h2 id="introduction-to-operating-system">Introduction to Operating System</h2>
+<p><strong>Interrupt Steps</strong></p>
+<ul>
+<li>Loading program counter and status register of interrupt vector </li>
+<li>Executing Interrupt Service Routines</li>
+<li>Pushing program counter and status register to stack </li>
+</ul>
+<p><strong>Controlling Program Behavior</strong></p>
+<ul>
+<li>Let a program run for a limited time and then switch to others</li>
+<li>Do not let programs write or read every part of the memory</li>
+</ul>
+<p><strong>mechanism that helps with improving efficiency of resident monitor</strong></p>
+<ul>
+<li>Buffering</li>
+<li>Spooling</li>
+<li>Caching</li>
+</ul>
+<p><strong>Program Counter</strong></p>
+<ul>
+<li>Stores the address of the next instruction to be executed</li>
+</ul>
+<p><strong>advantage of privilege mode over user mode?</strong></p>
+<ul>
+<li>It can execute system calls. </li>
+<li>It can execute any instruction. </li>
+<li>It can read/write any location in memory. </li>
+</ul>
+<p><strong>time tracking happen in operating system?</strong>
+* Using CPU clock frequency</p>
+<p><strong>approaches for memory protection?</strong></p>
+<ul>
+<li>Allow programs to only write in their own specific memory part</li>
+<li>Do not allow programs to write over resident monitor</li>
+</ul>
+<p><strong>role of memory management unit</strong></p>
+<ul>
+<li>Checks programs request for writing into memory falls between base and base + bound</li>
+</ul>
+<p><strong>Memory protection needed for CPU protection?</strong></p>
+<ul>
+<li>To ensure programs can not execute register 0 (R0) </li>
+</ul>
+<p><strong>CPU protection is fulfilled through</strong></p>
+<ul>
+<li>Using hardware enforcement for user and privilege modes </li>
+<li>Making sure switching from user to privilege mode is supervised by resident monitor</li>
+</ul>
+<h2 id="cpu-scheduling-concepts">CPU Scheduling Concepts</h2>
+<p><strong>Process</strong></p>
+<ul>
+<li>Process are active, Act of executing a program</li>
+<li>Requires memory to be assigned to it</li>
+</ul>
+<p><strong>Programs</strong></p>
+<ul>
+<li>Programs are passive</li>
+<li>One program can be run by multiple processes</li>
+<li>One process can run multiple programs</li>
+<li>A program can generate processes</li>
+<li>Program needs memory to be allocated for<ul>
+<li>Code</li>
+<li>Global Data</li>
+<li>Stack</li>
+<li>Heap</li>
+</ul>
+</li>
+<li>Programs are written in high level language</li>
+</ul>
+<p><strong>Compiler</strong></p>
+<ul>
+<li>Converts a program written in high level language into Machine readable language/ Assembly language</li>
+</ul>
+<p><strong>Relative Reference</strong></p>
+<ul>
+<li>Tag that corresponds to the address of a line of code</li>
+</ul>
+<p><strong>Symbolic Reference</strong></p>
+<ul>
+<li>Are tags for Library Functions</li>
+</ul>
+<p><strong>Linker</strong></p>
+<ul>
+<li>uses a relocation tables</li>
+<li>Uses a combination of object files and relocation table to identify loc that needs modification. </li>
+<li>Converts to binary</li>
+<li>Linker uses memory addresses starting from 0 and incremented by 1</li>
+</ul>
+<p><strong>Preemptive Scheduling</strong></p>
+<ul>
+<li>CPU scheduler can stop processes in middle of running </li>
+</ul>
+<p><strong>Non Premptive Scheduling</strong></p>
+<ul>
+<li>Is used in embedded systems</li>
+</ul>
+<p><strong>Context Switch</strong></p>
+<ul>
+<li>Save context of the current running process in its process control block (PCB) </li>
+<li>Load context of the next running process from its process control block (PCB)</li>
+</ul>
+<p><strong>SJF scheduling</strong></p>
+<ul>
+<li>Process with shortest CPU burst time runs first</li>
+</ul>
+<h2 id="concurrent-processes">Concurrent Processes</h2>
+<p><strong>Race Condition</strong></p>
+<ul>
+<li>Read-Write</li>
+<li>Write- Write</li>
+</ul>
+<p><strong>hardware solution for concurrency problem between threads</strong></p>
+<ul>
+<li>Atomicity</li>
+</ul>
+<p><strong>Atomic Instruction</strong></p>
+<ul>
+<li>CPU will not context switch while executing this instruction</li>
+</ul>
+<p><strong>progress property</strong></p>
+<ul>
+<li>A thread executing non critical section code, should not block a thread willing to execute critical section</li>
+</ul>
+<p><strong>CPU fairness assumption?</strong></p>
+<ul>
+<li>In long term, threads should receive same number of CPU cycles</li>
+</ul>
+<p><strong>software solutions for concurrency problem between threads such as Lamport-Bakery algorithm, can not be used in practice?</strong></p>
+<ul>
+<li>System does not know number of threads and there is no way to determine it </li>
+</ul>
+<p><strong>Readers-Writers problem</strong></p>
+<ul>
+<li>Multiple readers can read at the same time </li>
+<li>Only one writer can write at a time </li>
+<li>If writer is writing, readers can not read </li>
+<li>If readers are reading, no writer can write </li>
+</ul>
+<h2 id="memory-management">Memory Management</h2>
+<p><strong>Internal Fragmentation</strong></p>
+<ul>
+<li>Unused memory in the stack and heap allocated space</li>
+</ul>
+<p><strong>External Fragmentation</strong></p>
+<ul>
+<li>Unused memory between process allocated space</li>
+</ul>
+<p><strong>Policies that can be used to improve efficiency of memory compaction</strong></p>
+<ul>
+<li>Memory Allocation Protocols </li>
+<li>Dynamic Linking and Loading </li>
+<li>Overlays </li>
+<li>Swapping</li>
+</ul>
+<p><strong>advantage of contiguous allocation over paging?</strong></p>
+<ul>
+<li>For accessing lines of code, it requires less memory access</li>
+</ul>
+<p><strong>page faults occur when</strong></p>
+<ul>
+<li>A program wants to start executing</li>
+<li>Accessing a page that was previously in memory, but has been replaced by another page</li>
+</ul>
+<p><strong>disadvantages of paging</strong></p>
+<ul>
+<li>Increased memory usage, due to saving page tables </li>
+<li>Slow creation, due to logical to physical address conversion</li>
+</ul>
+<p><strong>demand paging</strong></p>
+<ul>
+<li>Virtual memory is based on using demand paging</li>
+<li>Pages will be moved to memory when they are accessed, and not before that. </li>
+<li>Initially there will be no program pages in memory, and they will all be kept in hard disk.</li>
+</ul>
+<p><strong>Program Locality</strong></p>
+<ul>
+<li>A page that is being used currently, has high chance of being used again. </li>
+<li>Two successive page requests have good chance of asking for the same page.</li>
+<li>Very few pages will have high frequency usage</li>
+</ul>
                 
               
               
@@ -532,6 +844,26 @@
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../../Cocoa/Cocoa/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Cocoa" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Cocoa
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
