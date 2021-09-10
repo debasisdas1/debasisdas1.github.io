@@ -5,7 +5,7 @@ nav:
     - Introduction: 'Python/Python.md'
     
   - Machine Learning: 
-    - Introduction: 'MachineLearning/Machinelearning.md'
+    - Introduction: 'MachineLearning/MachineLearningIntroduction.md'
     - Maximum Likelihood: 'MachineLearning/MaximumLikelihood/MaximumLikelihood.md'
     - KMeans Clustering(SKLearn): 'MachineLearning/KMeans_Clustering/KMeans_Clustering.md'
     - DBScan Clustering(SKLearn): 'MachineLearning/DBScan_Clustering/DBScan_Clustering.md'
@@ -20,8 +20,8 @@ nav:
   - Swift Language: 'Swift/Swift.md'
   - Cocoa:
     - Cocoa: 'Cocoa/Cocoa.md'
-    - NSTableView: 'Cocoa/NSTableView.md'
-    - NSTableView (Programatically): 'Cocoa/NSTableView_programatically.md'
+  - Notes:
+    - Operating System: 'Notes/OS_Notes.md'  
 
 theme:
     name: material

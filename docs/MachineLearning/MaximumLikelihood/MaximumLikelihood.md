@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Maximum Likelihood for Normal Distribution
 
 *Added By (Debasis Das - 27-Aug-2021)*
