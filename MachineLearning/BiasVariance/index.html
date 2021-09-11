@@ -14,7 +14,7 @@
     
     
       
-        <title>Stack - Code Snippets - By Debasis Das</title>
+        <title>Bias-Variance - Code Snippets - By Debasis Das</title>
       
     
     
@@ -60,6 +60,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#bias-variance-tradeoff" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -86,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Stack
+              Bias-Variance
             
           </span>
         </div>
@@ -142,6 +147,8 @@
         <div class="md-main__inner md-grid">
           
             
+              
+                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -225,12 +232,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" data-md-state="indeterminate" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
       
       <label class="md-nav__link" for="__nav_3">
         Machine Learning
@@ -248,7 +257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MachineLearning/MachineLearningIntroduction/" class="md-nav__link">
+      <a href="../MachineLearningIntroduction/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -258,11 +267,21 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../MachineLearning/BiasVariance/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Bias-Variance
       </a>
+      
     </li>
   
 
@@ -272,7 +291,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MachineLearning/MaximumLikelihood/MaximumLikelihood/" class="md-nav__link">
+      <a href="../MaximumLikelihood/MaximumLikelihood/" class="md-nav__link">
         Maximum Likelihood
       </a>
     </li>
@@ -284,7 +303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MachineLearning/KMeans_Clustering/KMeans_Clustering/" class="md-nav__link">
+      <a href="../KMeans_Clustering/KMeans_Clustering/" class="md-nav__link">
         KMeans Clustering(SKLearn)
       </a>
     </li>
@@ -296,7 +315,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MachineLearning/DBScan_Clustering/DBScan_Clustering/" class="md-nav__link">
+      <a href="../DBScan_Clustering/DBScan_Clustering/" class="md-nav__link">
         DBScan Clustering(SKLearn)
       </a>
     </li>
@@ -357,14 +376,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" data-md-state="indeterminate" type="checkbox" id="__nav_5" checked>
       
       <label class="md-nav__link" for="__nav_5">
         Data Structures
@@ -382,7 +399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Datastructures/" class="md-nav__link">
+      <a href="../../Datastructures/Datastructures/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -392,19 +409,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Datastructures/Stack/" class="md-nav__link">
         Stack
       </a>
-      
     </li>
   
 
@@ -414,7 +423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tree/" class="md-nav__link">
+      <a href="../../Datastructures/Tree/" class="md-nav__link">
         Tree
       </a>
     </li>
@@ -548,81 +557,40 @@
               </div>
             
             
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>Stack</h1>
+                <h1 id="bias-variance-tradeoff">Bias Variance Tradeoff</h1>
+<p><em>Created By: Debasis Das (11-Sept-2021)</em></p>
+<p>Notes taken from 
+<a href="https://www.youtube.com/watch?v=EuBBz3bI-aA">StatQuest: Bias Variance Tradeoff</a></p>
+<p><img alt="png" src="../Images/BiasVariance1.jpeg" />
+<img alt="png" src="../Images/BiasVariance2.jpeg" />
+<img alt="png" src="../Images/BiasVariance3.jpeg" /></p>
                 
-                <ul>
-<li>Stack is one of the simplest data structures.</li>
-<li>Stack has LIFO - Last In first out order</li>
-<li>Stack is like an array but with limited functionality<ul>
-<li>Push to add a new object to the top</li>
-<li>Pop to remove the last object</li>
-<li>top to look at the top most/last element without removing it</li>
-</ul>
-</li>
-</ul>
-<p><div class="highlight"><pre><span></span><code><span class="kd">import</span> <span class="nc">Cocoa</span>
-
-<span class="c1">//Here the stack is created as a wrapper around a swift array that allows push an object to the stack, </span>
-<span class="c1">//pop the last object and look at the top element of the stack</span>
-<span class="kd">public</span> <span class="kd">struct</span> <span class="nc">Stack</span><span class="p">&lt;</span><span class="n">T</span><span class="p">&gt;</span> <span class="p">{</span>
-    <span class="n">fileprivate</span> <span class="kd">var</span> <span class="nv">array</span> <span class="p">=</span> <span class="p">[</span><span class="n">T</span><span class="p">]()</span>
-
-    <span class="kd">public</span> <span class="kd">var</span> <span class="nv">isEmpty</span><span class="p">:</span> <span class="nb">Bool</span><span class="p">{</span>
-        <span class="k">return</span> <span class="n">array</span><span class="p">.</span><span class="bp">isEmpty</span>
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kd">var</span> <span class="nv">count</span><span class="p">:</span> <span class="nb">Int</span><span class="p">{</span>
-        <span class="k">return</span> <span class="n">array</span><span class="p">.</span><span class="bp">count</span>
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kr">mutating</span> <span class="kd">func</span> <span class="nf">push</span><span class="p">(</span><span class="kc">_</span> <span class="n">element</span><span class="p">:</span><span class="n">T</span><span class="p">){</span>
-        <span class="n">array</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kr">mutating</span> <span class="kd">func</span> <span class="nf">pop</span><span class="p">()</span> <span class="p">-&gt;</span> <span class="n">T</span><span class="p">?{</span>
-        <span class="k">return</span> <span class="n">array</span><span class="p">.</span><span class="n">popLast</span><span class="p">()</span>
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kd">var</span> <span class="nv">top</span><span class="p">:</span> <span class="n">T</span><span class="p">?</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">array</span><span class="p">.</span><span class="bp">last</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
-<strong>Testing the stack implementation</strong></p>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nv">stack</span> <span class="p">=</span> <span class="n">Stack</span><span class="p">&lt;</span><span class="nb">Int</span><span class="p">&gt;()</span>
-<span class="n">stack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="bp">print</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span> 
-<span class="c1">//Stack&lt;Int&gt;(array: [10])</span>
-
-<span class="n">stack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
-<span class="bp">print</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span> 
-<span class="c1">//Stack&lt;Int&gt;(array: [10, 20])</span>
-
-<span class="n">stack</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
-<span class="bp">print</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span> <span class="c1">//Stack&lt;Int&gt;(array: [10, 20, 30])</span>
-<span class="k">if</span> <span class="kd">let</span> <span class="nv">val</span> <span class="p">=</span> <span class="n">stack</span><span class="p">.</span><span class="n">pop</span><span class="p">(){</span>
-    <span class="bp">print</span><span class="p">(</span><span class="s">&quot;The popped item = </span><span class="si">\(</span><span class="n">val</span><span class="si">)</span><span class="s">&quot;</span><span class="p">)</span> 
-    <span class="c1">//The popped item = 30</span>
-<span class="p">}</span>
-<span class="bp">print</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span> <span class="c1">//Stack&lt;Int&gt;(array: [10, 20])</span>
-
-<span class="k">if</span> <span class="kd">let</span> <span class="nv">topElement</span> <span class="p">=</span> <span class="n">stack</span><span class="p">.</span><span class="n">top</span><span class="p">{</span>
-    <span class="bp">print</span><span class="p">(</span><span class="s">&quot;The Top Element is = </span><span class="si">\(</span><span class="n">topElement</span><span class="si">)</span><span class="s">&quot;</span><span class="p">)</span>
-<span class="p">}</span>
-<span class="c1">//The Top Element is = 20</span>
-
-<span class="bp">print</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span> 
-<span class="c1">//Stack&lt;Int&gt;(array: [10, 20])</span>
-
-
-<span class="c1">//The pop removes the last element however the top only looks at the last element without removing it.</span>
-</code></pre></div>
+                  
                 
               
               
@@ -642,7 +610,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../Datastructures/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction" rel="prev">
+        <a href="../MachineLearningIntroduction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -658,13 +626,13 @@
       
       
         
-        <a href="../Tree/" class="md-footer__link md-footer__link--next" aria-label="Next: Tree" rel="next">
+        <a href="../MaximumLikelihood/MaximumLikelihood/" class="md-footer__link md-footer__link--next" aria-label="Next: Maximum Likelihood" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Tree
+              Maximum Likelihood
             </div>
           </div>
           <div class="md-footer__button md-icon">
