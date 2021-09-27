@@ -9,19 +9,19 @@
       
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
     
     
       
-        <title>KMeans Clustering(SKLearn) - Code Snippets - By Debasis Das</title>
+        <title>Algorithms - Code Snippets - By Debasis Das</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.f7f47774.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f7f47774.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
         
       
     
@@ -53,7 +53,7 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
   
     
-    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kmeans-clustering-using-sklearn" class="md-skip">
+        <a href="#algorithms" class="md-skip">
           Skip to content
         </a>
       
@@ -72,7 +72,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Code Snippets - By Debasis Das" class="md-header__button md-logo" aria-label="Code Snippets - By Debasis Das" data-md-component="logo">
+    <a href="../.." title="Code Snippets - By Debasis Das" class="md-header__button md-logo" aria-label="Code Snippets - By Debasis Das" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -91,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              KMeans Clustering(SKLearn)
+              Algorithms
             
           </span>
         </div>
@@ -148,8 +148,6 @@
           
             
               
-                
-              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -158,7 +156,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Code Snippets - By Debasis Das" class="md-nav__button md-logo" aria-label="Code Snippets - By Debasis Das" data-md-component="logo">
+    <a href="../.." title="Code Snippets - By Debasis Das" class="md-nav__button md-logo" aria-label="Code Snippets - By Debasis Das" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -177,7 +175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -190,14 +188,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" data-md-state="indeterminate" type="checkbox" id="__nav_2" checked>
       
       <label class="md-nav__link" for="__nav_2">
         Machine Learning
@@ -215,7 +211,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MachineLearningIntroduction/" class="md-nav__link">
+      <a href="../../MachineLearning/MachineLearningIntroduction/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -227,7 +223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../BiasVariance/" class="md-nav__link">
+      <a href="../../MachineLearning/BiasVariance/" class="md-nav__link">
         Bias-Variance
       </a>
     </li>
@@ -239,7 +235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MaximumLikelihood/MaximumLikelihood/" class="md-nav__link">
+      <a href="../../MachineLearning/MaximumLikelihood/MaximumLikelihood/" class="md-nav__link">
         Maximum Likelihood
       </a>
     </li>
@@ -249,21 +245,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../MachineLearning/KMeans_Clustering/KMeans_Clustering/" class="md-nav__link">
         KMeans Clustering(SKLearn)
       </a>
-      
     </li>
   
 
@@ -273,7 +259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../DBScan_Clustering/DBScan_Clustering/" class="md-nav__link">
+      <a href="../../MachineLearning/DBScan_Clustering/DBScan_Clustering/" class="md-nav__link">
         DBScan Clustering(SKLearn)
       </a>
     </li>
@@ -285,7 +271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MarkovChain/" class="md-nav__link">
+      <a href="../../MachineLearning/MarkovChain/" class="md-nav__link">
         Markov Chain
       </a>
     </li>
@@ -297,7 +283,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../MLResources/" class="md-nav__link">
+      <a href="../../MachineLearning/MLResources/" class="md-nav__link">
         Resources
       </a>
     </li>
@@ -339,7 +325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Datastructures/Datastructures/" class="md-nav__link">
+      <a href="../../Datastructures/Datastructures/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -351,7 +337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Datastructures/Stack/" class="md-nav__link">
+      <a href="../../Datastructures/Stack/" class="md-nav__link">
         Stack
       </a>
     </li>
@@ -363,7 +349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Datastructures/Tree/" class="md-nav__link">
+      <a href="../../Datastructures/Tree/" class="md-nav__link">
         Tree
       </a>
     </li>
@@ -382,11 +368,21 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../Algorithms/Algorithms/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Algorithms
       </a>
+      
     </li>
   
 
@@ -420,7 +416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../AWS/Aws/" class="md-nav__link">
+      <a href="../../AWS/Aws/" class="md-nav__link">
         Introduction
       </a>
     </li>
@@ -462,7 +458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Notes/OS_Notes/" class="md-nav__link">
+      <a href="../../Notes/OS_Notes/" class="md-nav__link">
         Operating System
       </a>
     </li>
@@ -483,9 +479,7 @@
             
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -507,63 +501,41 @@
               
                 
                 
-                <h1 id="kmeans-clustering-using-sklearn">KMeans Clustering using SKLearn</h1>
-<p><em>Created By: Debasis Das (26-Aug-2021)</em></p>
-<p>Using SKLearn to explore KMeans Clustering and Plotting the cluster centroids along with the cluster points</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <span class="n">KMeans</span>
-<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-
-<span class="n">A</span> <span class="o">=</span> <span class="p">[</span>
-<span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">],</span>
-<span class="p">[</span><span class="mi">11</span><span class="p">,</span><span class="mi">10</span><span class="p">],</span>
-<span class="p">[</span><span class="mi">12</span><span class="p">,</span><span class="mi">10</span><span class="p">],</span>
-<span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">],</span>
-<span class="p">[</span><span class="mi">15</span><span class="p">,</span><span class="mi">17</span><span class="p">],</span>
-<span class="p">[</span><span class="mf">13.5</span><span class="p">,</span><span class="mi">15</span><span class="p">],</span>
-<span class="p">[</span><span class="mi">15</span><span class="p">,</span><span class="mi">16</span><span class="p">],</span>
-<span class="p">[</span><span class="mi">17</span><span class="p">,</span><span class="mi">18</span><span class="p">],</span>
-<span class="p">[</span><span class="mf">14.5</span><span class="p">,</span><span class="mi">19</span><span class="p">],</span>
-<span class="p">[</span><span class="mi">20</span><span class="p">,</span><span class="mi">20</span><span class="p">],</span>
-<span class="p">[</span><span class="mf">13.5</span><span class="p">,</span><span class="mf">14.5</span><span class="p">]</span>
-<span class="p">]</span>
-
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-<span class="n">number_clusters</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> 
-<span class="n">pca</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="n">x_pca</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="n">km</span> <span class="o">=</span> <span class="n">KMeans</span><span class="p">(</span>
-    <span class="n">n_clusters</span><span class="o">=</span><span class="n">number_clusters</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="s1">&#39;random&#39;</span><span class="p">,</span>
-    <span class="n">n_init</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> 
-    <span class="n">tol</span><span class="o">=</span><span class="mf">1e-04</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span>
-<span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_pca</span><span class="p">)</span>
-
-
-<span class="n">kmeans_labels</span> <span class="o">=</span> <span class="n">km</span><span class="o">.</span><span class="n">labels_</span>
-<span class="n">unique_labels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">kmeans_labels</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">unique_labels</span><span class="p">:</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
-        <span class="n">x_pca</span><span class="p">[</span><span class="n">kmeans_labels</span> <span class="o">==</span> <span class="n">i</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">x_pca</span><span class="p">[</span><span class="n">kmeans_labels</span> <span class="o">==</span> <span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-    <span class="p">)</span>
-<span class="n">cluster_centroids</span> <span class="o">=</span> <span class="n">km</span><span class="o">.</span><span class="n">cluster_centers_</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;cluster_centroids = &quot;</span><span class="p">,</span><span class="n">cluster_centroids</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;kmeans_labels = &quot;</span><span class="p">,</span><span class="n">kmeans_labels</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">cluster_centroids</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">cluster_centroids</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span><span class="n">linewidths</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span><span class="n">marker</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>cluster_centroids =  [[ 6.38423083 -1.0142913 ]
- [ 1.67176795  0.63576739]
- [-5.28182536 -0.28756359]]
-kmeans_labels =  [2 2 2 2 1 1 1 0 1 0 1]
-
-&lt;matplotlib.collections.PathCollection at 0x7fef5a604c40&gt;
-</code></pre></div>
-<p><img alt="png" src="../output_1_2.png" /></p>
-                
-                  
+                <h1 id="algorithms">Algorithms</h1>
+<ul>
+<li>Linear search</li>
+<li>Binary search</li>
+<li>Hash search</li>
+<li>Breadth-first search</li>
+<li>Depth-first search</li>
+<li>Kruskal’s MST Algorithm</li>
+<li>Prim’s MST Algorithm</li>
+<li>Dijkstra’s shortest path Algorithm</li>
+<li>Bubble sort</li>
+<li>Insertion sort</li>
+<li>Selection sort</li>
+<li>Quicksort</li>
+<li>Heap sort</li>
+<li>Merge sort</li>
+<li>Bucket sort</li>
+<li>Radix sort</li>
+</ul>
+<p><strong>Algorithm Strategies</strong></p>
+<ul>
+<li>Brute force</li>
+<li>Greedy</li>
+<li>Divide and Conquer</li>
+<li>Dynamic programming</li>
+</ul>
+<p><strong>Run Time Analysis and Big O</strong></p>
+<ul>
+<li>Constant</li>
+<li>Logarithmic</li>
+<li>Linear</li>
+<li>Log-linear</li>
+<li>Quadratic</li>
+<li>Exponential</li>
+</ul>
                 
               
               
@@ -583,7 +555,7 @@ kmeans_labels =  [2 2 2 2 1 1 1 0 1 0 1]
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../MaximumLikelihood/MaximumLikelihood/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Maximum Likelihood" rel="prev">
+        <a href="../../Datastructures/Tree/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tree" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -592,20 +564,20 @@ kmeans_labels =  [2 2 2 2 1 1 1 0 1 0 1]
               <span class="md-footer__direction">
                 Previous
               </span>
-              Maximum Likelihood
+              Tree
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../DBScan_Clustering/DBScan_Clustering/" class="md-footer__link md-footer__link--next" aria-label="Next: DBScan Clustering(SKLearn)" rel="next">
+        <a href="../../AWS/Aws/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              DBScan Clustering(SKLearn)
+              Introduction
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -634,10 +606,10 @@ kmeans_labels =  [2 2 2 2 1 1 1 0 1 0 1]
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.expand"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.febc23d1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.febc23d1.min.js"></script>
       
     
   </body>
