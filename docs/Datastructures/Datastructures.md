@@ -1,5 +1,26 @@
 # Data Structures
 
+* Trees 
+	* Binary Search
+	* Red-Black,
+	* binary
+	* BST
+	* AVL
+	* 2-3
+	* splay
+* Graphs (un/directed, un/weighted)
+* Hash Tables
+* Heaps
+* Linked Lists 
+	* singly linked
+	* doubly linked
+	* circularly linked
+* Stacks
+* Queues (inc. Priority)
+* Arrays
+* Array Lists
+
+
 ## Stack
 * Stack is one of the simplest data structures.
 * Stack has LIFO - Last In first out order

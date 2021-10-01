@@ -43,12 +43,76 @@ The images that are fed into the model as a training data set can be called as r
 - Inaccuracy of the assumed model
 - Inherrent ambiguity in the real world problems
 
+## Applications of Machine Learning
+
+- Computer Vision
+- Speech recognition
+- Natural Language Processing
+- Medical Informatics
+- Robotics
+- Computational Biology
+- Information Technology
+	- Spam Detection
+	- Web Image Search
+	- Recommendation
+	- Information Filtering
+	- Community Detection
+	- Adaptive advertisement
+	- Sentiment Analysis	
+- Finance
+	- Credit Risk Assessment
+	- Fraud Detection
+	- Stock Market Prediction
+	- Algorithmic trading
+	- Return forecasting 
+
 ## Types of Machines Learning
 
 - **Supervised Learning** (Training samples have labels/class)
 - **Unsupervised Learning** (the training data does not have labels, here the training data can be divided into groups based on the feature set/structure of data)
 - **Reinforcement Learning** - Learning to take actions to maximize the notion of reward (Goals, Reward functions are used). Used in robotics.
 
+## Supervised Learning
+
+Task of learning a function that maps an input to an output based on example input-output pairs.
+
+- Support-vector machines
+- Linear regression
+- Logistic regression
+- Naive Bayes
+- Linear discriminant analysis
+- Decision trees
+- K-nearest neighbor algorithm
+- Neural networks (Multilayer perceptron)
+- Similarity learning
+
+## Unsupervised Learning
+
+Unsupervised learning, also known as unsupervised machine learning, uses machine learning algorithms to analyze and cluster unlabeled datasets. 
+
+These algorithms discover hidden patterns or data groupings without the need for human intervention. Its ability to discover similarities and differences in information make it the ideal solution for 
+
+- exploratory data analysis
+- cross-selling strategies, 
+- customer segmentation, 
+- image recognition.
+
+Types of Unsupervised Learnings are as follows
+
+- Clustering
+	- K-Means clustering
+	- Hierarchial Clustering
+	- DBScan Clustering
+- Neural Networks
+
+**Unsupervised Learning is used in**
+
+- News Section
+- Computer Vision (object recognition)
+- Medical Imaging
+- Anomaly detection
+- Customer persona definitions
+- Recommendation engines
 
 ## Reference
 - Book - Introduction to Data Mining (PANG-NING TAN, MICHAEL STEINBACH, ANUJ KARPATNE, VIPIN KUMAR)

@@ -1,25 +1,30 @@
 site_name: Code Snippets - By Debasis Das
 nav:
   - Home: 'index.md'
-  - Python: 
-    - Introduction: 'Python/Python.md'
+#  - Python: 
+#    - Introduction: 'Python/Python.md'
     
   - Machine Learning: 
     - Introduction: 'MachineLearning/MachineLearningIntroduction.md'
+    - Bias-Variance: 'MachineLearning/BiasVariance.md'
     - Maximum Likelihood: 'MachineLearning/MaximumLikelihood/MaximumLikelihood.md'
     - KMeans Clustering(SKLearn): 'MachineLearning/KMeans_Clustering/KMeans_Clustering.md'
     - DBScan Clustering(SKLearn): 'MachineLearning/DBScan_Clustering/DBScan_Clustering.md'
+    - Markov Chain: 'MachineLearning/MarkovChain.md'
+    - Resources: 'MachineLearning/MLResources.md'    
     
-  - Design Patterns: 
-    - Introduction: 'DesignPattern/Designpatterns.md'
+#  - Design Patterns: 
+#    - Introduction: 'DesignPattern/Designpatterns.md'
   - Data Structures: 
     - Introduction: 'Datastructures/Datastructures.md'
     - Stack: 'Datastructures/Stack.md'  
     - Tree: 'Datastructures/Tree.md'
   - Algorithms: 'Algorithms/Algorithms.md'
-  - Swift Language: 'Swift/Swift.md'
-  - Cocoa:
-    - Cocoa: 'Cocoa/Cocoa.md'
+#  - Swift Language: 'Swift/Swift.md'
+#  - Cocoa:
+#    - Cocoa: 'Cocoa/Cocoa.md'
+  - AWS (Amazon Web Services):
+    - Introduction: 'AWS/Aws.md'
   - Notes:
     - Operating System: 'Notes/OS_Notes.md'  
 
